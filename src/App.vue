@@ -21,6 +21,14 @@
             :nextQuestion="nextQuestion"
             :increment="incrementCorrectAnswers"
           />
+
+          <result 
+            v-if="questionIndex >= 10"
+            :catagory="selectedCatagory"
+            :difficulty="selectedDificulty"
+            :numOfQuestions="numTotal"
+            :numOfCorrect="numCorrect"
+          />
         </b-col>
       </b-row>
     </b-container>
@@ -30,12 +38,14 @@
 <script>
 import Header from "./components/Header.vue";
 import QuestionBox from "./components/QuestionBox.vue";
+import Result from "./components/Result.vue";
 
 export default {
   name: "app",
   components: {
     Header,
-    QuestionBox
+    QuestionBox,
+    Result
   },
 
   data() {
