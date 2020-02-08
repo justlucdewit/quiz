@@ -16,7 +16,7 @@
       <b-row>
         <b-col>
           <QuestionBox
-            v-if="questions.length"
+            v-if="questions.length && questionIndex < 10"
             :currentquestion="questions[questionIndex]"
             :nextQuestion="nextQuestion"
             :increment="incrementCorrectAnswers"

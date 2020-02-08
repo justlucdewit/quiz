@@ -95,7 +95,7 @@ export default {
 
   filters: {
     fixEscapeCodes(value){
-      return value.replace(/&#039;/g, "'").replace(/&quot;/g, '"').replace(/&def;/g, '°');
+      return value.replace(/&#039;/g, "'").replace(/&quot;/g, '"').replace(/&def;/g, '°').replace(/&Delta;/g, 'Δ');
     }
   },
 
