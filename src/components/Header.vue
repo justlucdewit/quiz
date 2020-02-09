@@ -30,8 +30,9 @@
         </div>
 
         <!--restart quiz button-->
-      
         <b-button variant="danger" class="restart-button" @click="restartQuiz">Restart quiz</b-button>
+
+        
       </span>
   </div>
 </template>

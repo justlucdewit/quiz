@@ -8,7 +8,7 @@
 
             <div v-if="numOfCorrect < 5">sorry, maybe you should practise more 😔</div>
             <div v-if="numOfCorrect >= 5 && numOfCorrect < 9">WOW goodjob 👍</div>
-            <div v-if="numOfCorrect >= 9">damn you are bigbrain 🧠</div>
+            <div v-if="numOfCorrect >= 9">damn, you are bigbrain 🧠</div>
         </b-jumbotron>
     </div>
 </template>
